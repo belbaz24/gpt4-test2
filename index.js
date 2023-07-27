@@ -5,10 +5,10 @@ async function run () {
     let browser;
 
     try {
-        const auth = 'brd-customer-hl_4aa64c52-zone-scraping_browser:tjru425zci81';
+        const auth = 'username:password';
 
         browser = await puppeteer.connect({
-            browserWSEndpoint:`wss://${auth}@brd.superproxy.io:9222`
+            browserWSEndpoint:`wss://${auth}@host`
         });
 
         const page = await browser.newPage();
