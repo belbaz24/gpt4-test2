@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv(".env")
-openai.api_key = "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"
+openai.api_key = "OPENAI-API-KEY"
 
 
 
